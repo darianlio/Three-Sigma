@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stock.css">
+    <script src="js/train.js"></script>
+    <script src="node_modules/neataptic/dist/neataptic.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap:100,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="index.html"></a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">IBM Hackathon</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="intro">
+        <div id="content">
+          <h5>STOCKS</h5>
+        </div>
+    </div>
+
+    <div id="main">
+      <div id="center">
+      <h4>GENERATE:</h4>
+
+      <p class="symbol">Stock Quote:</p>
+      <form class="symbol">
+        <input id="symbol-search" class="form-control" type="search" placeholder="Enter Company">
+      </form>
+
+      <br>
+
+      <p class="time-series">Time Series:</p>
+      <select id="time-series-select" class="form-control" onchange="show(this.options[this.selectedIndex].value)">
+        <option value="Intraday">Intraday</option>
+        <option value="Daily">Daily</option>
+        <option value="Weekly">Weekly</option>
+        <option value="Monthly">Monthly</option>
+      </select>
+
+      <br>
+
+      <div id="int">
+        <p class="interval">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interval:</p>
+        <select id="interval-select" class="form-control">
+          <option value="1min">1 Min</option>
+          <option value="5min">5 Min</option>
+          <option value="15min">15 Min</option>
+          <option value="30min">30 Min</option>
+          <option value="60min">60 Min</option>
+        </select>
+      </div>
+      <button id="button-search" class="type" type="submit">Submit</button>
+      </div>
+      <canvas id="stockChart"></canvas>
+      <canvas id="predictChart"></canvas>
+      <button id="predict-button" class="type" type="submit">Predict</button>
+    </div>
+    <script src="js/alphaStock.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.js"></script>
+  </body>
+</html>

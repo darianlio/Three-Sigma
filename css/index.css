@@ -1,0 +1,168 @@
+html {
+	margin: 0 100px;
+	border: 0;
+  font-size: 100%;
+  font-weight: 100;
+	font: inherit;
+  vertical-align: baseline;
+  min-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #edeeef;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.navbar {
+  background: rgba(248,248,248, 1);
+  height: 100px;
+  padding: 0 100px;
+  margin: 0;
+}
+
+.navbar a{
+	color: black;
+	transition: 0.7s;
+}
+
+.navbar-nav>li>a {
+  font-size: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 80px;
+}
+
+.navbar a:hover{
+	color: #00c7ff;
+	transition: 0.7s;
+}
+
+.navbar-brand {
+    background: url(../img/logo.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 300px;
+    width: 500px;
+    transform: translateX(-50%);
+    top: 25%;
+    left: 26%;
+    position: absolute;
+    padding: 0;
+}
+
+#intro{
+	height: 500px;
+	position: relative;
+  color: white;
+  background-color: rgb(15,135,149);
+}
+
+#content {
+  padding: 100px 300px 0 150px;
+}
+
+#pfirst{
+  color:white;
+  font-size: 25px;
+  letter-spacing: 0.08em;
+}
+
+#psecond{
+  color: white;
+  font-size: 17px;
+  letter-spacing: 0.07em;
+}
+
+#stock{
+  height: 475px;
+  color: #515151!important;
+  background-color: white;
+}
+
+#crypto{
+  height: 475px;
+  color: #515151!important;
+  background-color: #cecece;
+}
+
+
+h5 {
+  letter-spacing: 0.1em;
+  font-family: "Asap", sans-serif;
+}
+
+.footer {
+  background-color: #515151;
+  text-decoration: none;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 300px;
+  width:100% ;
+  color: white!important;
+}
+
+#footerContainer {
+  width: auto;
+  max-width: 680px;
+  font-weight: 100;
+  font-size: 35px;
+  font-family: 'Robot', sans-serif;
+  padding: 50px 150px;
+  z-index: 1000;
+}
+
+#cryptoContent{
+  padding: 100px 0 0 150px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding-right:25px;
+}
+
+#stock p, #crypto p{
+  letter-spacing: 0.1em;
+  font-size: 40px;
+  padding: 20px 0;  
+}
+
+#cryptoImage{
+  padding-left: 50px;
+}
+
+.row:after {
+  padding: 0 50px;
+}
+
+.type {
+  background-color: rgba(0,0,0,0); /* Green */
+  border: 2px solid rgb(15,135,149);
+  color: #515151;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing:0.1em;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.type:hover {
+  background-color: rgb(15,135,149); 
+  color: white; 
+  border: 2px solid rgb(15,135,149);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}

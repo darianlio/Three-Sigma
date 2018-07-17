@@ -1,0 +1,164 @@
+html {
+	margin: 0 100px;
+	border: 0;
+  font-size: 100%;
+  font-weight: 100;
+	font: inherit;
+  vertical-align: baseline;
+  min-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #edeeef;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.navbar {
+  background: rgba(248,248,248, 1);
+  height: 100px;
+  padding: 0 100px;
+  margin: 0;
+}
+
+.navbar a{
+	color: black;
+	transition: 0.7s;
+}
+
+.navbar-nav>li>a {
+  font-size: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 80px;
+}
+
+.navbar a:hover{
+	color: #00c7ff;
+	transition: 0.7s;
+}
+
+.navbar-brand {
+    background: url(../img/logo.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 300px;
+    width: 500px;
+    transform: translateX(-50%);
+    top: 25%;
+    left: 26%;
+    position: absolute;
+    padding: 0;
+}
+
+#intro{
+	height: 150px;
+  position: relative;
+  text-align: center;
+  color: white;
+  background-color: rgb(15,135,149);
+}
+
+#intro h5{
+  font-size: 40px;
+  letter-spacing: 0.07em;
+}
+
+#content {
+  padding: 50px 150px;
+}
+
+#main {
+  height: 400px;
+  background-color: white;
+}
+
+#main #center{
+  padding: 50px 0 50px 610px;
+}
+
+.symbol{
+  display: inline-block;
+}
+
+.market{
+  display: inline-block;
+}
+
+.info{
+  display: inline-block;
+}
+
+.info span{
+  display: none;
+  position: absolute;
+  color: #000;
+  background: #EEE;
+}
+
+.info:hover span{
+  display: block;
+  text-align: center;
+}
+
+.time-series{
+  display: inline-block;
+}
+
+#stockChart{
+  display: none;
+}
+
+#predictChart{
+  display:none;
+}
+#button-search{
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+#predict-button{
+  display: none;
+}
+
+.type {
+  background-color: rgba(0,0,0,0); /* Green */
+  border: 2px solid rgb(15,135,149);
+  color: #515151;
+  padding: 13px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing:0.1em;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.type:hover {
+  background-color: rgb(15,135,149);
+  color: white;
+  border: 2px solid rgb(15,135,149);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.form-control{
+  width: 125px;
+  display: initial;
+}
+
+#stockChart{
+  padding-bottom: 50px;
+}
+
+#predict-button{
+  margin-left: 670px;
+}
